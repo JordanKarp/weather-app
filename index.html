@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container">
+          <h1 id="pageName">Weather App</h1>
+          <form id="searchForm" novalidate>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZdJREFUWEftl2tuAjEMhMPJCidrezLKyUBTxdXIdeKxQS2qun9WhDw+jx/xHsaTPYcn4xl/Bug4lX2db/v9Mca4zLG3jvpVhXAwIAwgO/N9jFECqwAB4pwRLP6XwVQgWGnusTPNPXjjwdvUeAlUlKAUoAhG2Txad5rgS6EVoCuthgqAMVUUD8LNHHNbqAzIWxnN5zmRcj72YAygwicDYnVWbsqAcLA3bKnSDog32VmlAAGKXXc30C6IVSDJwJ1CbBED+ULHKc6V2mLE5nMsLRXfAXH88DweV7LM1vrgDs/+SSDAr4z8Mkx1GQfhr7lMygqX0mrwt2JIyoom0BJ85zIpCAtAHD+tOqQWM6UOqWqnLaxUO4TcV66gz22yu8yrpLQdnk+5oKW0t0k+ltKehoj82tQgRSGv0rZ9cPLIrrJ1KlCpp5mbl1xVBcL8ivweJnVVByhqtKKD2jBqlmVZ41sT/jqRlekqxD0OH2xNPzfzZZiuQisoVrIFcy9QFFMYa8M8AoihOt9s324dtQ4J19VjpvwDZTreAEbjgCW+/mHsAAAAAElFTkSuQmCC"/>
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Enter your location"
+              />
+              <button id="searchBtn" type="submit">
+                <i class='bx bx-search'></i>
+              </button>
+          </form>
+
+            <div class="notFound">
+              <img src= "">
+              <p>Invalid location.</p>
+            </div>
+
+
+            <div id="searchResult">
+              <h3 id="cityName"></h3>
+              <p id="temperature"></p>
+              <p id="feelsLike"></p>
+              <p id="humidity"></p>
+              <p id="wind"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
