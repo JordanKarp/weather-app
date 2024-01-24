@@ -14,7 +14,7 @@ searchBtn.addEventListener("click", async () => {
         return
     }
     const cityName = document.getElementById("cityName");
-    const temperature = document.getElementById("temperature");
+    const temperatureField = document.getElementById("temperature");
     const feelsLike = document.getElementById("feelsLike");
     const humidity = document.getElementById("humidity");
     const wind = document.getElementById("wind");
@@ -23,7 +23,7 @@ searchBtn.addEventListener("click", async () => {
     const ftemp = Math.round(weatherData.current.feelslike * (9/5) + 32 * 100) / 100
 
     cityName.textContent = `${weatherData.location.name}`;
-    temperature.textContent = `${temp} °F`;
+    temperatureField.textContent = `${temp} °F`;
     feelsLike.textContent = `Feels like: ${ftemp} °F`;
     humidity.textContent = `Humidity: ${weatherData.current.humidity} %`;
     wind.textContent = `Wind: ${weatherData.current.wind_speed} km/h`;
